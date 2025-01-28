@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Tips page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-running,.fa-coffee {font-size:200px}
+</style>
+<style>
+    img {
+        width: 300px;
+        height: 300px;
+        float : left;
+    }
+</style>
+</head>
+<body>
+
+
+<!-- Header -->
+<header class="w3-container w3-red w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">Heart Health Matters !</h1>
+  <p class="w3-xlarge">Make Your Heart Happy</p>
+  
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-auto">
+    <div class="w3-twothird">
+      <h1>Prevention Tips</h1>
+      <h5 class="w3-padding-32"><b>Exercise regularly:</b> Regular exercise helps to lower blood pressure, cholesterol, and blood sugar levels. It also helps to maintain a healthy weight<br><br>
+        <b>Maintain a healthy weight :</b>Being overweight or obese is a major risk factor for CVD. If you are overweight or obese, losing even a small amount of weight can help to lower your risk.<br><br>
+        <b>Don't smoke:</b> Smoking is one of the leading risk factors for CVD. If you smoke, quitting is the single best thing you can do for your heart health.<br><br>
+        <b>Get regular checkups:</b> See your doctor for regular checkups, including blood pressure checks and cholesterol screenings</h5>
+    </div>
+    <div class="w3-third w3-center">
+        <p><img src="{{ url_for('static',filename='images/smoke.png')}}"></p>
+    </div>
+    </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-white w3-padding-64 w3-container">
+  <div class="w3-auto">
+    <div class="w3-third w3-center">
+        <img src="{{ url_for('static',filename='images/food.png')}}">
+       
+        </div>
+        <img src="{{ url_for('static',filename='images/Healthy.jpg')}}">
+        <img src="{{ url_for('static',filename='images/run.png')}}">  
+
+      <h1><center>Improving Cardiovascular Health</center></h1>
+      <h5 class="w3-padding-32"><b>Eat plenty of fruits and vegetables:</b> Fruits and vegetables are low in saturated fat, trans fat, and cholesterol, and they are high in fiber. They are also a good source of vitamins and minerals that are important for heart health<br><br>
+        <b>Choose lean protein sources:</b> Lean protein sources, such as fish, chicken, and beans, are low in saturated fat and cholesterol. They are also a good source of protein, which is essential for maintaining a healthy weight.<br><br>
+        <b>Limit saturated and trans fats:</b> Saturated and trans fats can raise cholesterol levels, which can increase your risk of CVD. Limit your intake of saturated fat to less than 10% of your total calories, and limit your intake of trans fat to as close to zero as possible.<br><br>
+        <b>Choose healthy fats:</b> Healthy fats, such as those found in olive oil, avocados, and nuts, can help to lower cholesterol levels and protect your heart health.<br><br>
+        <b>Get enough fiber:</b> Fiber helps to lower cholesterol levels and keep you feeling full. Aim to eat 25-30 grams of fiber per day.<br><br>
+        <b>Drink plenty of water:</b> Water helps to keep your blood pressure and blood sugar levels in check. Aim to drink 8 glasses of water per day.<br><br>
+        <b>Get enough sleep:</b> Sleep is important for overall health, including heart health. Aim for 7-8 hours of sleep per night</h5>
+    </div>
+    
+  </div>
+</div>
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">Health is Wealth !! </h1>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+ </div>
+ <h3>Project by</h3>
+ <p>Ganesh N</p>
+ <p>Satish V</p>
+ <p>Karthik S</p>
+ <h3>Reva University</h3>
+    
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
